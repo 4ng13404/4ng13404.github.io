@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--Created by Ardora - www.webardora.net-->
+<!--ArdoraColorea-->
+<!--bajo licencia Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+para otros usos contacte con el autor-->
+<html lang="es">
+<head><meta charset="utf-8" /><title>Colorear según leyenda</title>
+<link type="text/css" href="ColoreaLeyenda_resources/css/ardoraColorea.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="../ardoraFiles/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../ardoraFiles/js/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="../ardoraFiles/js/jquery.ui.touch-punch.min.js"></script>
+<script language="javascript" type="text/javascript" src="ColoreaLeyenda_resources/js/ardoraColoreaCFG.js"></script>
+<script language="javascript" type="text/javascript" src="ColoreaLeyenda_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="ColoreaLeyenda_resources/js/ardoraColorea.js"></script>
+<script language="javascript" type="text/javascript" src="ColoreaLeyenda_resources/js/ardoraTab.js"></script>
+</head>
+<body onLoad="loadPage()" onbeforeunload="unloadPage()" onUnload="unloadPage()">
+<div id="ardoraMain">
+<audio id="audioFelicitacion">
+<source src="ColoreaLeyenda_resources/media/ganar-ganador-.mp3" type="audio/mp3">
+</audio>
+<audio id="audioTempo">
+<source src="ColoreaLeyenda_resources/media/ambient_46.mp3" type="audio/mp3">
+</audio>
+<audio id="audioIntentos">
+<source src="ColoreaLeyenda_resources/media/error-fallo_5.mp3" type="audio/mp3">
+</audio>
+<audio id="audioErro">
+<source src="ColoreaLeyenda_resources/media/mario-kart-lose-1.mp3" type="audio/mp3">
+</audio>
+<div id="ardoraEnu"><SPAN style="font-size:12px;color:#000000">Dedes saber sumar, restar, multiplicar y dividir. Colorea por completo el conejito según la leyenda para luego comprobar si todo está del color correcto. Primero haz las operaciones para ver si coinciden.</SPAN><br><SPAN style="font-size:12px;color:#000000">Materia: Matemáticas</SPAN><br><SPAN style="font-size:12px;color:#000000">Grado:Cuarto Grado de Primaria </SPAN></div>
+  <div id="ardoraAct">
+<svg id="s_pointer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="378px" height="378px">
+<line id="vertical" x1="0" y1="0" x2="0" y2="378" style="stroke:rgb(255,0,0);stroke-width:1" />
+<line id="horizontal" x1="0" y1="0" x2="378" y2="0" style="stroke:rgb(255,0,0);stroke-width:1" />
+<circle id="c_point" cx="0" cy="0" r="5"style="opacity:0.1;stroke:rgb(255,0,0);stroke-width:2"/></svg>
+  <canvas id="ardoraCanvasPaint" aria-label="Image to paint" width="378px" height="378px"></canvas>
+  <div id="colorPanel">
+<li><span class="bColor" id="c0"></span><p id="p0">10</p></li>
+<li><span class="bColor" id="c1"></span><p id="p1">20</p></li>
+<li><span class="bColor" id="c2"></span><p id="p2">30</p></li>
+<li><span class="bColor" id="c3"></span><p id="p3">40</p></li>
+<li><span class="bColor" id="c4"></span><p id="p4">50</p></li>
+<li><span class="bColor" id="c5"></span><p id="p5">60</p></li>
+<li><span class="bColor" id="c6"></span><p id="p6">70</p></li>
+  </div>
+<canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+  </div>
+<div id="ardoraTab">
+  <canvas id="ardoraTabCanvas" width="70" height="137"></canvas>
+  <div id="buttonOk"><canvas id="buttonOkCanvas" width="70" height="70"></canvas></div>
+</div></div>
+<div id="ardoraAlumSCORM"><p></p></div>
+<div id="ardoraAutor"><p>Karla Angie Arias Pérez 1ro G #6</p></div>
+</body></html>
