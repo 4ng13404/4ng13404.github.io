@@ -9,7 +9,7 @@ function calcMaxWidth() {$("#ardoraAct").css("width", actMaxWidth + "px");$("#ar
 var canWidth = $("#ardoraAct").css("width").replace("px", "");var canHeight = $("#ardoraAct").css("height").replace("px", "");
 $("#ardoraActCanvas").attr({"width": (parseInt(canWidth) + 20).toString(),"height": canHeight});}
 function paintQuest() {var vHtml="";$("#ardoraQuest").html("");if (audioW[indexG].localeCompare("") == 0) {$("#ardoraQuest").html("<p>" + questionW[indexG] + "</p>");
-} else {$("#ardoraQuest").html(vHtml+"<img alt='Play' id='playSound' class='imaLeft' src='Ordenar_frases_lengua_resources/media/sound.png' alt='Sound' align='left'>"+ "<p>" + questionW[indexG] + "</p>");
+} else {$("#ardoraQuest").html(vHtml+"<img alt='Play' id='playSound' class='imaLeft' src='OrdenaFrases_resources/media/sound.png' alt='Sound' align='left'>"+ "<p>" + questionW[indexG] + "</p>");
 $("#playSound").attr("tabindex","0");$("#playSound").keydown(function(e) {if (e.which!=9){var au="audio"+audioW[indexG];document.getElementById(au).play();}});
 $("#playSound").bind("click", function (e) {var au = "audio" + audioW[indexG];document.getElementById(au).play();});}
 profG = parseInt($("#ardoraQuest").css("height").replace("px", ""));
